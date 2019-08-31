@@ -1,19 +1,16 @@
 {
-  "name": "css-grid",
+  "name": "js",
   "version": "1.0.0",
-  "description": "All lecture files from the Modern JavaScript (Novice to Ninja) course on Udemy.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "run-script-os",
-    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
-    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
-    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.5",
     "run-script-os": "^1.0.3"
-  },
-  "keywords": []
+  }
 }

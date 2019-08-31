@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Events Inside Forms</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+        background-color: #faebd7;
+      }
+
+      header {
+        background-color: #242424;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #faebd7;
+        font-size: 1.5rem;
+        position: relative;
+        text-shadow: 0 0 4px #faebd7;
+      }
+
+      header::after {
+        content: '';
+        width: 60px;
+        height: 60px;
+        background-color: #242424;
+        border-radius: 3px;
+        position: absolute;
+        bottom: -25px;
+        transform: rotate(45deg);
+        z-index: -1;
+      }
+      main {
+        margin-top: 50px;
+        color: #242424;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+      }
+
+      form {
+        min-width: 400px;
+        margin: 40px auto;
+        background: white;
+        padding: 10px;
+        font-size: 1rem;
+      }
+      input {
+        display: block;
+        margin: 10px auto;
+        padding: 4px;
+        width: 100%;
+      }
+      input[type='submit'] {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>1. Events Inside Formss</h2>
+    </header>
+    <main>
+      <form class="signup-form">
+        <input type="text" id="username" placeholder="username" />
+        <input type="submit" value="submit" />
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
